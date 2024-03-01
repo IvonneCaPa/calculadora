@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="nombre">Escribe tu nombre:</label>
+        <input type="text" name="nombre" id="nombre" required/>
+      </div>
+      <div>
+        <label for="edad">Indica tu edad</label>
+        <input type="number" name="edad" id="edad" min="18" max="100">
+      </div>
+      <div>
+        <label for="tel">Tu número de teléfono</label>
+        <input type="tel" name="tel" id="tel" >
+      </div>
+      <div>
+        <label for="email">Indica tu correo electrónico</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="password">Indica tu correo electrónico</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div>
+        <input type="radio" name="operador" id="suma">
+        <label for="suma">Sumar</label>
+        <br>
+        <input type="radio" name="operador" id="resta">
+        <label for="resta">Restar</label>
+        <br>
+        <input type="radio" name="operador" id="multiplicar">
+        <label for="multiplicar">Multiplicar</label>
+        <br>
+        <input type="radio" name="operador" id="dividir">
+        <label for="dividir">Dividir</label>
+      </div>
+      <br>
+      <!-- <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar datos">
+      </div> -->
+      <div>
+        <button type="button" onclick="misDatos()">Enviar</button>
+        <button type="reset">Limpiar datos</button>
+      </div>
+      
+    </form>
+
+    <br><br><br>
+    <p id="frase">Esperando tus datos</p>
+
+    <script src="js/formulario.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+  </body>
+</html>
